@@ -1,7 +1,7 @@
 class Estudiante {
-  int id; //
-  String nombre; //
-  String apellidos; //
+  int id;
+  String nombre;
+  String apellidos;
   int edad;
   int grado;
   String grupo;

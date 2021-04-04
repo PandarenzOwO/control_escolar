@@ -12,9 +12,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: Scaffold(
         appBar: AppBar(
           title: Text(
@@ -44,7 +41,8 @@ class _HomePageState extends State<HomePage> {
                       "Bajas de Alumnos",
                       "https://img.icons8.com/dusk/452/denied.png",
                       "Aqui podra ver a los alumnos que se han dado de baja en esta institucion",
-                      "bajas"),
+                      "bajas",
+                  ),
                 ],
               ),
             ],

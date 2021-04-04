@@ -21,7 +21,7 @@ class EstudiantesBloc {
         grado: 10,
         grupo: "B",
         foto: "https://img.icons8.com/dusk/64/human-head.png",
-        activo: false),
+        activo: true),
     Estudiante(
         id: 3,
         nombre: "Robert",

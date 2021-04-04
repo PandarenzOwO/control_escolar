@@ -10,27 +10,13 @@ class ListaPage extends StatefulWidget {
 class _ListaPageState extends State<ListaPage> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
           'Lista de Alumnos',
         ),
-          // actions: [
-          //   IconButton(
-          //     icon: Icon(Icons.shopping_cart_rounded),
-          //     onPressed: () {
-          //       Navigator.pushNamed(context, "bajas");
-          //     },
-          //   )
-          // ],
-        ),
-        body: streamProductos(),
       ),
+      body: streamProductos(),
     );
   }
 
@@ -107,11 +93,11 @@ class _ListaPageState extends State<ListaPage> {
                     children: [
                       IconButton(
                         icon: Icon(Icons.archive_outlined,
-                            color: p.activo == true
+                            color: p.activo
                                 ? Colors.green[900]
                                 : Colors.red[900]),
                         onPressed: () {
-                          if (p.activo == true) {
+                          if (p.activo) {
                             estudiantesBloc.agregarEstudiantesCarritoSink
                                 .add(p);
                           } else {
@@ -120,17 +106,6 @@ class _ListaPageState extends State<ListaPage> {
                         },
                         iconSize: 45.0,
                       ),
-                      // Text(
-                      //   //p.activo.toString(),
-                      //   p.activo == true ? "-" : "+",
-                      //   textAlign: TextAlign.center,
-                      //   style: TextStyle(
-                      //       fontSize: 30.0,
-                      //       fontWeight: FontWeight.bold,
-                      //       color: p.activo == true
-                      //           ? Colors.green[600]
-                      //           : Colors.red[600]),
-                      // ),
                     ],
                   ),
                 ),
