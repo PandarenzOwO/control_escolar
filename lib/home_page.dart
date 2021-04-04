@@ -19,12 +19,6 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text(
             "Control Escolar",
-            style: TextStyle(
-              fontSize: 26.0,
-              color: Colors.white,
-              fontWeight: FontWeight.w600,
-              fontStyle: FontStyle.italic,
-            ),
           ),
         ),
         body: Padding(
@@ -82,29 +76,30 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Expanded(
-                child: Column(
-              children: [
-                Text(
-                  titulo,
-                  style: TextStyle(
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.w500,
-                    fontStyle: FontStyle.normal,
-                  ),
-                ),
-                SizedBox(height: 10.0),
-                Padding(
-                  padding: const EdgeInsets.only(left: 10.0, right: 10.0),
-                  child: Center(
-                    child: Text(
-                      texto,
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(fontSize: 16.0),
+              child: Column(
+                children: [
+                  Text(
+                    titulo,
+                    style: TextStyle(
+                      fontSize: 24.0,
+                      fontWeight: FontWeight.w500,
+                      fontStyle: FontStyle.normal,
                     ),
                   ),
-                ),
-              ],
-            ))
+                  SizedBox(height: 10.0),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                    child: Center(
+                      child: Text(
+                        texto,
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(fontSize: 16.0),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

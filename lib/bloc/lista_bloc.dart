@@ -17,18 +17,9 @@ class _ListaPageState extends State<ListaPage> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Center(
-            child: Text(
-              'Lista de Alumnos',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontStyle: FontStyle.italic,
-                fontSize: 28.0,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ),
+          title: Text(
+          'Lista de Alumnos',
+        ),
           // actions: [
           //   IconButton(
           //     icon: Icon(Icons.shopping_cart_rounded),
